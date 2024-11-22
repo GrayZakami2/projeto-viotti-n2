@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.TestaBancoController">
+   <children>
+      <Button fx:id="btnConexao" layoutX="248.0" layoutY="151.0" mnemonicParsing="false" onAction="#btnConexao_Click" text="Faz a Conexão" />
+      <Button fx:id="btnInserir" layoutX="274.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnInserir_Click" text="Inserir" />
+   </children>
+</AnchorPane>
