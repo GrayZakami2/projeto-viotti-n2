@@ -18,10 +18,20 @@ public class Promocoes {
     Double valor;
     LocalDateTime dataLimite;
 
-    public Promocoes(Long id, HashSet<Pizza> pizzas, Double valor) {
+    public Promocoes(Long id, String nome, HashSet<Pizza> pizzas, Double valor, LocalDateTime dataLimite) {
         this.id = id;
+        this.nome = nome;
         this.pizzas = pizzas;
         this.valor = valor;
+        this.dataLimite = dataLimite;
+    }
+    
+    public void adicionarPizza(Pizza pizza){
+        this.pizzas.add(pizza);
+    }
+    
+    public void removerPizza(Pizza pizza) {
+        this.pizzas.remove(pizza);
     }
 
     public Long getId() {
@@ -30,6 +40,14 @@ public class Promocoes {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public HashSet<Pizza> getPizzas() {
