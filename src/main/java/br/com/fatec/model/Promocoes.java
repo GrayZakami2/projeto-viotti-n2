@@ -4,6 +4,7 @@
  */
 package br.com.fatec.model;
 
+import java.time.LocalDateTime;
 import java.util.HashSet;
 
 /**
@@ -12,8 +13,10 @@ import java.util.HashSet;
  */
 public class Promocoes {
     Long id;
+    String nome;
     HashSet<Pizza> pizzas;
     Double valor;
+    LocalDateTime dataLimite;
 
     public Promocoes(Long id, HashSet<Pizza> pizzas, Double valor) {
         this.id = id;
@@ -44,6 +47,12 @@ public class Promocoes {
     public void setValor(Double valor) {
         this.valor = valor;
     }
-    
-    
+
+    public LocalDateTime getDataLimite() {
+        return dataLimite;
+    }
+
+    public void setDataLimite(LocalDateTime dataLimite) {
+        this.dataLimite = dataLimite;
+    }
 }
