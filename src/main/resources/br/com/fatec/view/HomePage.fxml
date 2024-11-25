@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.controllers.HomePageController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/view/css/homepage.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="47.0" prefWidth="601.0" style="-fx-background-color: orange;">
+         <children>
+            <Text fill="WHITE" layoutX="24.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FATIA" wrappingWidth="89.796875">
+               <font>
+                  <Font name="Britannic Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="121.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ferramenta Avançada de Tecnologia Integrada e Atendimento" wrappingWidth="212.833984375" />
+         </children>
+      </Pane>
+      <Pane layoutY="47.0" prefHeight="360.0" prefWidth="140.0" style="-fx-background-color: gray;">
+         <children>
+            <Button fx:id="btn_pizzas" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Gerenciar Pizzas" />
+            <Button fx:id="btn_promos" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Gerenciar Promoções" />
+            <Button fx:id="btn_entregadores" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Gerenciar Entregadores" />
+            <Button fx:id="btn_funcs" layoutY="112.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Gerenciar Funcionários" />
+            <Button fx:id="btn_vendas" layoutY="147.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Gerenciar Vendas" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="314.0" layoutX="213.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane layoutX="213.0" layoutY="245.0" prefHeight="88.0" prefWidth="90.0" style="-fx-background-color: gray;" />
+      <Pane layoutX="325.0" layoutY="245.0" prefHeight="88.0" prefWidth="90.0" style="-fx-background-color: gray;" />
+      <Pane layoutX="437.0" layoutY="245.0" prefHeight="88.0" prefWidth="90.0" style="-fx-background-color: gray;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.controllers.CadastroController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/view/css/cadastro.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="238.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="21.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem vindo de volta..." wrappingWidth="195.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="339.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frederico Fazorso">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="396.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pizzeria">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="273.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login de Gerente">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="273.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_email" layoutX="273.0" layoutY="162.0" prefHeight="25.0" prefWidth="287.0" promptText="william.afton@gmail.com" />
+      <TextField fx:id="txt_senha" layoutX="273.0" layoutY="222.0" prefHeight="25.0" prefWidth="287.0" promptText="***********" />
+      <Text layoutX="273.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_entrar" layoutX="349.0" layoutY="258.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Entrar" />
+      <Button fx:id="btn_criar_conta" layoutX="349.0" layoutY="294.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Criar Conta" />
+      <Text layoutX="363.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recuperar Senha" underline="true">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
