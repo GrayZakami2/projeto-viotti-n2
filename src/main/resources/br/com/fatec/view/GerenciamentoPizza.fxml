@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="601.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.HomePageController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/view/css/homepage.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="47.0" prefWidth="601.0" style="-fx-background-color: darkorange;">
+         <children>
+            <Text fill="WHITE" layoutX="24.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FATIA" wrappingWidth="89.796875">
+               <font>
+                  <Font name="Britannic Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="121.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ferramenta Avançada de Tecnologia Integrada e Atendimento" wrappingWidth="212.833984375" />
+            <Text fx:id="txt_data" fill="WHITE" layoutX="547.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" />
+            <Text fx:id="txt_hora" fill="WHITE" layoutX="547.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="314.0" layoutX="213.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="txt_voltar" layoutX="71.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt; Voltar">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="71.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciamento de Pizzas">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+      </Text>
+      <Pane layoutX="71.0" layoutY="120.0" prefHeight="303.0" prefWidth="459.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Pane layoutX="307.0" layoutY="33.0" prefHeight="258.0" prefWidth="138.0" style="-fx-background-color: white;" />
+            <Text layoutX="307.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pizzas Cadastradas:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_id" layoutX="24.0" layoutY="27.0" prefHeight="25.0" prefWidth="213.0" />
+            <TextField fx:id="txt_nome" layoutX="24.0" layoutY="72.0" prefHeight="25.0" prefWidth="213.0" />
+            <Text layoutX="24.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredientes:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_ingredientes" layoutX="24.0" layoutY="118.0" prefHeight="25.0" prefWidth="213.0" />
+            <Text layoutX="24.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contém Glúten?">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="radio_gluten_sim" layoutX="21.0" layoutY="172.0" mnemonicParsing="false" text="Sim" />
+            <RadioButton fx:id="radio_gluten_nao" layoutX="90.0" layoutY="172.0" mnemonicParsing="false" text="Não" />
+            <ChoiceBox fx:id="choice_sabor" layoutX="21.0" layoutY="197.0" prefHeight="25.0" prefWidth="219.0" />
+            <Button layoutX="24.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: darkorange;" text="Salvar" textFill="WHITE" />
+            <Button layoutX="24.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: gray;" text="Excluir" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
