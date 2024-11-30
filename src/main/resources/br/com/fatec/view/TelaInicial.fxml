@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.TelaInicialController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/view/css/telainicial.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="132.0" layoutX="234.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="196.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frederico Fazorso">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="279.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pizzeria">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_entrar" layoutX="259.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#entrar" prefHeight="25.0" prefWidth="82.0" text="Entrar" />
+   </children>
+</AnchorPane>

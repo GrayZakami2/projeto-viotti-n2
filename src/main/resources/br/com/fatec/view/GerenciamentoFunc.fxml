@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="601.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.HomePageController">
+   <children>
+      <Pane prefHeight="47.0" prefWidth="601.0" style="-fx-background-color: darkorange;">
+         <children>
+            <Text fill="WHITE" layoutX="24.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FATIA" wrappingWidth="89.796875">
+               <font>
+                  <Font name="Britannic Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="121.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ferramenta Avançada de Tecnologia Integrada e Atendimento" wrappingWidth="212.833984375" />
+            <Text fx:id="txt_data" fill="WHITE" layoutX="547.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" />
+            <Text fx:id="txt_hora" fill="WHITE" layoutX="547.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="314.0" layoutX="213.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="txt_voltar" layoutX="71.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt; Voltar">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="71.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciamento de Funcionários">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+      </Text>
+      <Pane layoutX="132.0" layoutY="123.0" prefHeight="303.0" prefWidth="338.0" style="-fx-background-color: lightgray;">
+         <children>
+            <TextField fx:id="txt_cpf" layoutX="63.0" layoutY="27.0" prefHeight="8.0" prefWidth="213.0" />
+            <Text layoutX="63.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="60.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: darkorange;" text="Salvar" textFill="WHITE" />
+            <Button layoutX="60.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: gray;" text="Excluir" textFill="WHITE" />
+            <Text layoutX="63.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_telefone" layoutX="63.0" layoutY="146.0" prefHeight="8.0" prefWidth="213.0" />
+            <Text layoutX="63.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_nome" layoutX="63.0" layoutY="66.0" prefHeight="8.0" prefWidth="213.0" />
+            <TextField fx:id="txt_email" layoutX="63.0" layoutY="105.0" prefHeight="8.0" prefWidth="213.0" />
+            <Text layoutX="63.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="choice_turno" layoutX="60.0" layoutY="194.0" prefHeight="25.0" prefWidth="219.0" />
+            <Text layoutX="63.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turno:">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@/br/com/fatec/view/css/homepage.css" />
+   </stylesheets>
+</AnchorPane>
