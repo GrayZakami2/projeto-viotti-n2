@@ -23,7 +23,7 @@ public class CriarContaLoader extends Application {
     public void start(Stage tela) throws IOException {
         setTela(tela);
         
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("CriarConta.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/br/com/fatec/view/CriarConta.fxml"));
         Parent root = fxmlLoader.load();
         CriarContaController controller = fxmlLoader.getController();
         

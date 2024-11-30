@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.controllers.CriarContaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.CriarContaController">
     <stylesheets>
         <URL value="@/br/com/fatec/view/css/criarconta.css" />
     </stylesheets>
@@ -49,8 +49,8 @@
                   <Font name="Britannic Bold" size="14.0" />
                </font>
             </Text>
-            <Button fx:id="btn_criar" layoutX="349.0" layoutY="409.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Criar Conta" />
-            <Text fx:id="txt_voltar" layoutX="273.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt; Voltar">
+            <Button fx:id="btn_criar" layoutX="349.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#criar" prefHeight="25.0" prefWidth="135.0" text="Criar Conta" />
+            <Text fx:id="txt_voltar" layoutX="273.0" layoutY="86.0" onMouseClicked="#voltar" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt; Voltar">
                <font>
                   <Font name="Britannic Bold" size="14.0" />
                </font>
